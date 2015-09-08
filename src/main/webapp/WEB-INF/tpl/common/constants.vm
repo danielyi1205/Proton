@@ -1,0 +1,2 @@
+#set($basePath = ${rc.contextPath})
+#set($projectCnName = "proton")

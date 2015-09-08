@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Proton:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="Proton.war">
+      <element id="artifact" artifact-name="Proton:war exploded" />
+    </root>
+  </artifact>
+</component>

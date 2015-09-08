@@ -1,0 +1,55 @@
+#parse("/common/constants.vm")
+<!DOCTYPE html>
+<html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    #parse("/common/head.vm")
+    <style type="text/css">
+        body {
+            background: none repeat scroll 0 0 #f6f8f1 !important;
+        }
+        .page-content {
+            margin: 0 auto;
+            width: 90%;
+        }
+        .admin_name {
+            color: white;
+            padding-right: 15px;
+            padding-top: 10px;
+            vertical-align: middle;
+            display: block;
+        }
+    </style>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-sidebar-fixed page-footer-fixed">
+    #parse("/common/detail_topbar.vm")
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+            <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+            <!-- BEGIN PAGE HEADER-->
+            $screen_content
+            <!-- END PAGE CONTENT-->
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+    #parse("/common/footer.vm")
+</body>
+<!-- END BODY -->
+</html>

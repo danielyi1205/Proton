@@ -1,0 +1,49 @@
+
+
+
+<div class="col-md-12">
+    <table id="order_dg" style="width:100%;">
+    </table>
+</div>
+<script type="text/javascript">
+
+    $(function () {
+        alert("1");
+//        list("");
+        alert("2");
+    });
+
+    function init(){
+        list("");
+        alert($!static + "   " + "$!basePath" + "  " + ${rc.locale});
+    }
+
+    function list(pars) {
+        //构造列表
+        jQuery('#order_dg').datagrid({
+                                         url:'$!{basePath}/login/info.json',
+                                         fitColumns : true,
+                                         striped : true,
+                                         pagination : true,
+                                         rownumbers : true,
+                                         pageSize : 50,
+                                         pageNumber : 1,
+                                         pageList : [ 50, 100, 150, 200, 250],
+                                         loadMsg : '数据正在加载中...',
+                                         singleSelect:true,
+                                         queryParams : pars,
+                                         selectOnCheck : false,
+                                         checkOnSelect : false,
+                                         columns : [[
+                                                        {field : 'headName', title : '<span class="txtcenter">HeadName</span>',  resizable : true, hidden : false, sortable : false, width:$(this).width()*0.1, align: 'center'},
+                                                        {field : 'headValue', title : '<span class="txtcenter">HeadValue</span>',  resizable : true, hidden : false, sortable : false, width:$(this).width()*0.05, align: 'center'}
+
+                                                    ]],
+                                         onLoadSuccess:function(data){
+                                             $(".txtcenter").parent().parent().css("text-align","center");
+                                         }
+                                     });
+    }
+
+</script>
+
