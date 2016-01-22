@@ -26,6 +26,7 @@
           <element id="library" level="project" name="Maven: com.google.zxing:core:3.2.0" />
           <element id="library" level="project" name="Maven: com.google.zxing:javase:3.2.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.5.1" />
+          <element id="library" level="project" name="Maven: com.intellij:annotations:5.1" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.5.1" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.5.1" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" />
